@@ -7,9 +7,12 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  text: string = '';
-  translatedText: string = '';
+  text!: string;
+  translatedText!: string;
   constructor(private translateService: TranslateService) {}
 
-  onSubmit() {}
+  getInput(text: string) {
+    this.text = text;
+  }
+  translateText() {}
 }

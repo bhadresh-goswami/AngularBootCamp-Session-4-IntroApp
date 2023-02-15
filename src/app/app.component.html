@@ -1,1 +1,12 @@
 <h1>this is new header</h1>
+<table>
+  <tr>
+    <td>Enter your text:</td>
+    <td>
+      <input #text (input)="getInput(text.value)" />
+    </td>
+    <td>
+      <button type="button" (click)="translateText()">Translate!</button>
+    </td>
+  </tr>
+</table>
